@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./icon/iconfont.css">
+    <link rel="stylesheet" href="./css/login.css">
+    <link rel="shortcut icon" href="./img/title.ico" type="image/x-icon">
+    <title>注册-登录</title>
+</head>
+<body>
+    <div class="signer">
+        <div class="logo">
+            <a href="/">
+                <img src="./img/logo.png" alt="Logo">
+            </a>
+        </div>
+        <div class="main" >
+            <h4 class="title">
+                <div class="normal-title">
+                   <a id="signIn" class="main-title active">登录</a>
+                   <b>.</b>
+                   <a id="signUp" class="main-title">注册</a>
+                </div>
+            </h4>
+            <form class="main-js-content">
+               <section class="login-input" id="login-account">
+                    <input type="text" id="personal-user" placeholder="你的昵称">
+                    <i class="icon iconfont icon-account login-content-icon"></i>
+               </section>
+               <section class="login-input" id="login-telephone">
+                   <input type="tel" placeholder="手机号" id="personal-tel">
+                   <i class="icon iconfont icon-mobile"></i>
+               </section>
+               <section class="login-input" id="login-secret">
+                   <input type="passsword" id="secret" placeholder="设置密码">
+                   <i class="icon iconfont icon-suo login-content-icon"></i>
+               </section>
+               <input type="submit" name="commit" value="注册" class="sign-up-button" id="sign-up-btn"> 
+               <p class="sign-up-message">点击 “注册” 即表示您同意并愿意遵守简书<br/>
+                <a target="_blank" href="https://www.jianshu.com/p/c44d171298ce">用户协议</a>和
+                <a target="_blank" href="https://www.jianshu.com/p/2ov8x3">隐私政策</a>
+               </p>
+            </form>
+            <div class="more-signer">
+                <h6>
+                    社交账号直接注册                        
+                </h6>
+            </div>
+        </div>
+    </div>
+    <script src="./js/jQuery.js"></script>
+    <script src="./js/login.js"></script>
+</body>
+</html>
