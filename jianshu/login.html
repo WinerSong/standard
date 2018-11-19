@@ -21,7 +21,7 @@
                 <div class="normal-title">
                    <a id="signIn" class="main-title ">登录</a>
                    <b>.</b>
-                   <a id="signUp" class="main-title" active>注册</a>
+                   <a id="signUp" class="main-title active">注册</a>
                 </div>
             </h4>
             <form class="main-js-content">
@@ -42,7 +42,21 @@
                    <span>记住我</span>
                 </section>
                    <div class="other-login-methods">
-                       <span>登录遇到问题</span>
+                       <a class="dropdown">登陆遇到问题</a>
+                       <!-- <ul class="dropdown-menu">
+                           <li>
+                               <a href="">用手机号重置密码</a>
+                           </li>
+                           <li>
+                               <a href="">用邮箱重置密码</a>
+                           </li>
+                           <li>
+                               <a target="_blank" href="">无法用海外手机号登陆</a>
+                           </li>
+                           <li>
+                               <a target="_blank" href="">无法用Google账号登录</a>
+                           </li>
+                       </ul> -->
                    </div>
                    <button type="button" class="login-in-button" id="login-in-btn">登录</button>
                  <input type="submit" name="commit" value="注册" class="sign-up-button" id="sign-up-btn"> 
@@ -50,17 +64,41 @@
                    <a target="_blank" href="https://www.jianshu.com/p/c44d171298ce">用户协议</a>和
                    <a target="_blank" href="https://www.jianshu.com/p/2ov8x3">隐私政策</a>
                 </p>
+            </form>
+                <!-- 更多注册方式 -->
                 <div class="more-signer" id="sign-up-signer">
                   <h6>
                     社交账号直接注册                        
                   </h6>
-                </div> 
-                <section class="more-signer" id="login-in-signer">
-                    <h6>社交账号登录</h6>
-            </section>
-    </form>
-    </div>
- </div>   
+                  <ul>
+                      <li id="weibo-link-wrap" class>
+                          <span class="weibo" id="weibo-link" >
+                              <img src="./img/weibo.jpg" alt="微博图标">
+                          </span>
+                      </li>
+                      <li>
+                          <span id="weixin" class="weixin" target="_blank" >
+                              <img src="./img/weixin.jpg" alt="微信logo">
+                          </span>
+                      </li>
+                      <li>
+                          <span id="qq" class="qq" target="_blank">
+                              <img src="./img/qq.jpg" alt="扣扣图标">
+                          </span>
+                      </li>
+                      <li class="js-more-method" id="more">
+                          <span>其他</span>
+                      </li>
+                      <!-- <li class="js-hide-mehtod hide">
+                          <span  class="douban" target="_blank">
+                              <img src="./img/douban.jpg" alt="豆瓣图标">
+                          </span>
+                      </li> -->
+                  </ul>
+                  <div></div>
+                </div>
+       </div>
+   </div>   
     <script src="./js/jQuery.js"></script>
     <script src="./js/login.js"></script>
 </body>

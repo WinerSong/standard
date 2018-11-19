@@ -152,6 +152,44 @@ b{
         font-weight: 500;
         line-height: 1.1;
     }
+    .more-signer {
+        margin-top: 50px;
+    }
+    .more-signer h6 {
+        position: relative;
+        margin: 0 0 10px;
+        font-size: 12px;
+        color: #b5b5b5;
+    }
+    .more-signer h6:before {
+        left: 30px
+    }
+    #sign-up-signer h6:after , #sign-up-signer h6:before{
+        content: "";
+        border-top: 1px solid #b5b5b5;
+        display: block;
+        position: absolute;
+        width: 60px;
+        top: 5px;
+    }
+    .more-sign h6:after {
+        right: 30px
+    }
+    .more-signer ul span{
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        display: block
+    }
+    .more-signer li{
+        display: inline-block;
+    }
+    .more-signer img{
+        width:28px;
+        height:29px;
+    }
+
+
     
 
 
