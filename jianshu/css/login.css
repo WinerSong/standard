@@ -66,7 +66,7 @@ b{
 }
 .main-js-content{
     width:300px;
-    height:386px;
+    /* height:386px; */
 }
 .login-input{
     position: relative;
@@ -94,18 +94,23 @@ b{
   }
   .login-in-problem{
     float: left;
+    display: none;
     margin: 15px 0;
     box-sizing: border-box;
     font-size: 14px;
-    display:block;
     text-align: left;
     text-align: center;
     color: #969696;
   }
   .other-login-methods{
+      display: none;
       float:right;
+      position: relative;
       margin: 15px 0;
       color: #999;
+  }
+  .dropdown-menu{
+      display: none;
   }
   #login-in-btn{
     margin-top: 20px;
@@ -118,7 +123,7 @@ b{
     background: #3194d0;
     cursor: pointer;
     outline: none;
-    display: block;
+    display: none;
     clear: both;
   }
   .sign-up-button{
@@ -132,16 +137,23 @@ b{
       background: #42c02e;
       color: #fff;
   }
+  /* 此处的行内高度不够，可以通过设置line-height来设置行高 */
+  .sign-up-message{
+      color: #969696;
+      font-size: 12px;
+      margin: 10px 0;
+      line-height: 20px;
+  }
   .sign-up-message a{
       color: #3194d0;
       cursor: pointer;
       text-decoration: none;
     }
-    .more-signer{
-        margin-top: 50px;
-        box-sizing: border-box;
-        width:300px;
-    }
+.more-signer{
+    margin-top: 50px;
+    box-sizing: border-box;
+    width:300px;
+}
     .more-signer{
         position: relative;
         margin: 0 0 10px;
@@ -161,10 +173,8 @@ b{
         font-size: 12px;
         color: #b5b5b5;
     }
-    .more-signer h6:before {
-        left: 30px
-    }
-    #sign-up-signer h6:after , #sign-up-signer h6:before{
+    
+    .more-signer h6:after,.more-signer h6:before{
         content: "";
         border-top: 1px solid #b5b5b5;
         display: block;
@@ -172,21 +182,26 @@ b{
         width: 60px;
         top: 5px;
     }
-    .more-sign h6:after {
+    .more-signer h6:before {
+        left: 30px
+    }
+    /* 此处错误为拼写错误 */
+    .more-signer h6:after {
         right: 30px
     }
-    .more-signer ul span{
+    /* 此处的a标签应该设置为inline-block */
+    .more-signer ul a{
         width: 50px;
         height: 50px;
         line-height: 50px;
-        display: block
+        display: inline-block
     }
     .more-signer li{
         display: inline-block;
     }
+    /* 只设置图片的宽度，高度会根据图片原有大小成比例缩放 */
     .more-signer img{
-        width:28px;
-        height:29px;
+        width: 32px;
     }
 
 

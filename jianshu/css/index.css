@@ -1,0 +1,32 @@
+body {
+    height:172px;
+    padding-top: 56px!important;
+    width:1339px;
+    min-width: 768px;
+    font-size: 17px;
+    line-height: 1.42857;
+    background-color: #fff;
+    margin: 0;
+    display:block;
+    box-sizing: border-box;
+}
+a,body{
+    color: #333;
+}
+a{
+    cursor: pointer;
+}
+a:focus,a:hover {
+    color: #2f2f2f;
+    text-decoration: none;
+}
+a:focus {
+    outline: none;
+}
+.nav{
+    background-color: #fff;
+    border-color: #f0f0f0;
+    min-height: 50px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+}

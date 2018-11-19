@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./icon/iconfont.css">
     <link rel="stylesheet" href="./css/login.css">
+    <link rel="stylesheet" href="./css/reset.css">
     <link rel="shortcut icon" href="./img/title.ico" type="image/x-icon">
-    <title>注册-登录</title>
+    <title>注册-简书</title>
 </head>
+
 <body>
     <div class="signer">
         <div class="logo">
@@ -16,90 +19,89 @@
                 <img src="./img/logo.png" alt="Logo">
             </a>
         </div>
-        <div class="main" >
+        <div class="main">
             <h4 class="title">
                 <div class="normal-title">
-                   <a id="signIn" class="main-title ">登录</a>
-                   <b>.</b>
-                   <a id="signUp" class="main-title active">注册</a>
+                    <a id="signIn" class="main-title ">登录</a>
+                    <b>.</b>
+                    <a id="signUp" class="main-title active">注册</a>
                 </div>
             </h4>
             <form class="main-js-content">
-               <section class="login-input" id="login-account">
+                <section class="login-input" id="login-account">
                     <input type="text" id="personal-user" placeholder="你的昵称">
                     <i class="icon iconfont icon-account login-content-icon"></i>
-               </section>
-               <section class="login-input" id="login-telephone">
-                   <input type="tel" placeholder="手机号" id="personal-tel">
-                   <i class="icon iconfont icon-mobile"></i>
-               </section>
-               <section class="login-input" id="login-secret">
-                   <input type="passsword" id="secret" placeholder="设置密码">
-                   <i class="icon iconfont icon-suo login-content-icon"></i>
-               </section>
-               <section class="login-in-problem">
-                   <input type="checkbox" value="true" checked="checked" id="remember_me"/>
-                   <span>记住我</span>
                 </section>
-                   <div class="other-login-methods">
-                       <a class="dropdown">登陆遇到问题</a>
-                       <!-- <ul class="dropdown-menu">
-                           <li>
-                               <a href="">用手机号重置密码</a>
-                           </li>
-                           <li>
-                               <a href="">用邮箱重置密码</a>
-                           </li>
-                           <li>
-                               <a target="_blank" href="">无法用海外手机号登陆</a>
-                           </li>
-                           <li>
-                               <a target="_blank" href="">无法用Google账号登录</a>
-                           </li>
-                       </ul> -->
-                   </div>
-                   <button type="button" class="login-in-button" id="login-in-btn">登录</button>
-                 <input type="submit" name="commit" value="注册" class="sign-up-button" id="sign-up-btn"> 
-                 <p class="sign-up-message">点击 “注册” 即表示您同意并愿意遵守简书<br/>
-                   <a target="_blank" href="https://www.jianshu.com/p/c44d171298ce">用户协议</a>和
-                   <a target="_blank" href="https://www.jianshu.com/p/2ov8x3">隐私政策</a>
+                <section class="login-input" id="login-telephone">
+                    <input type="tel" placeholder="手机号" id="personal-tel">
+                    <i class="icon iconfont icon-mobile"></i>
+                </section>
+                <section class="login-input" id="login-secret">
+                    <input type="passsword" id="secret" placeholder="设置密码">
+                    <i class="icon iconfont icon-suo login-content-icon"></i>
+                </section>
+                <section class="login-in-problem">
+                    <input type="checkbox" value="true" checked="checked" id="remember_me" />
+                    <span>记住我</span>
+                </section>
+                <div class="other-login-methods">
+                    <a class="dropdown">登陆遇到问题</a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a href="">用手机号重置密码</a>
+                        </li>
+                        <li>
+                            <a href="">用邮箱重置密码</a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="">无法用海外手机号登陆</a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="">无法用Google账号登录</a>
+                        </li>
+                    </ul>
+                </div>
+                <button type="button" class="login-in-button" id="login-in-btn">登录</button>
+                <input type="submit" name="commit" value="注册" class="sign-up-button" id="sign-up-btn">
+                <p class="sign-up-message">点击 “注册” 即表示您同意并愿意遵守简书<br />
+                    <a target="_blank" href="https://www.jianshu.com/p/c44d171298ce">用户协议</a>和<a
+                     target="_blank" href="https://www.jianshu.com/p/2ov8x3">隐私政策</a>
                 </p>
             </form>
-                <!-- 更多注册方式 -->
-                <div class="more-signer" id="sign-up-signer">
-                  <h6>
-                    社交账号直接注册                        
-                  </h6>
-                  <ul>
-                      <li id="weibo-link-wrap" class>
-                          <span class="weibo" id="weibo-link" >
-                              <img src="./img/weibo.jpg" alt="微博图标">
-                          </span>
-                      </li>
-                      <li>
-                          <span id="weixin" class="weixin" target="_blank" >
-                              <img src="./img/weixin.jpg" alt="微信logo">
-                          </span>
-                      </li>
-                      <li>
-                          <span id="qq" class="qq" target="_blank">
-                              <img src="./img/qq.jpg" alt="扣扣图标">
-                          </span>
-                      </li>
-                      <li class="js-more-method" id="more">
-                          <span>其他</span>
-                      </li>
-                      <!-- <li class="js-hide-mehtod hide">
+            <!-- 更多注册方式 -->
+            <div class="more-signer" id="sign-up-signer">
+                <h6>社交账号直接注册</h6>
+                <ul>
+                    <li id="weibo-link-wrap" class="">
+                        <a class="weibo" id="weibo-link">
+                            <img src="./img/weibo.jpg" alt="微博图标">
+                        </a>
+                    </li>
+                    <li>
+                        <a id="weixin" class="weixin" target="_blank">
+                            <img src="./img/weixin.jpg" alt="微信logo">
+                        </a>
+                    </li>
+                    <li>
+                        <a id="qq" class="qq" target="_blank">
+                            <img src="./img/qq.jpg" alt="扣扣图标">
+                        </a>
+                    </li>
+                    <li id="more" class="js-more-method">
+                        <a>其他</a>
+                    </li>
+                    <!-- <li class="js-hide-mehtod hide">
                           <span  class="douban" target="_blank">
                               <img src="./img/douban.jpg" alt="豆瓣图标">
                           </span>
                       </li> -->
-                  </ul>
-                  <div></div>
-                </div>
-       </div>
-   </div>   
+                </ul>
+                <div></div>
+            </div>
+        </div>
+    </div>
     <script src="./js/jQuery.js"></script>
     <script src="./js/login.js"></script>
 </body>
+
 </html>

@@ -2,7 +2,7 @@ var signIn,
     signUp;
 signIn = $("#signIn");
 signIn.click(function(){
-    $("title").text("登录");
+    $("title").text("登录-简书");
     $("#personal-user").css("display","block");
     $("#login-telephone").css("display","none");
     $("#login-secret").css("display","block");
@@ -17,15 +17,10 @@ signIn.click(function(){
     $(".more-signer h6").text("社交账号登录");
     signIn.addClass('active');
     signUp.removeClass('active');
-    $(".other-login-methods").click(function(e){
-        if(e.target !==dropdown-menu){
-            dropdown-menu.hide();
-        }
-    })
 })
 signUp = $("#signUp");
 signUp.click(function(){
-    $("title").text("注册");
+    $("title").text("注册-简书");
     $("#personal-user").css("display","block");
     $("#login-telephone").css("display","block");
     $("#login-secret").css("display","block");
@@ -42,11 +37,12 @@ signUp.click(function(){
     signIn.removeClass('active');
     signUp.addClass('active');
 })
-
-
-// $("#signIn").click(function(){
-
-// });
-
+$(".dropdown").click(function(event){
+    event.stopPropagation();    
+     $(".dropdown-menu").css("display","block");
+})
+$(document).click(function(){
+    $(".dropdown-menu").css("display","none");
+})
 
     
